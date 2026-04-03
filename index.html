@@ -2,131 +2,282 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="Portfolio of Patrick Andersen — game and software developer focused on robust systems and gameplay mechanics." />
-  <title>Patrick Andersen — Game & Software Developer</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Portfolio of Patrick Andersen - game and software developer focused on robust systems, gameplay architecture, and shipped prototypes." />
+  <title>Patrick Andersen | Game Systems Developer</title>
 
-  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
+  <div class="bg-shape bg-shape-one" aria-hidden="true"></div>
+  <div class="bg-shape bg-shape-two" aria-hidden="true"></div>
 
-<div class="container">
-
-  <header>
-    <p class="eyebrow">Portfolio</p>
-    <h1>Patrick Andersen</h1>
-    <p class="subtitle">Game Developer · Software Developer</p>
-
-    <p class="intro">
-      I build reliable software systems and gameplay prototypes with a strong focus on
-      maintainability, technical quality, and shipping working products.
-    </p>
-
-    <div class="links">
-      <a href="https://github.com/zPaddyz" target="_blank" rel="noopener noreferrer">GitHub</a>
-      <a href="https://www.linkedin.com/in/paddyz/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-      <a href="mailto:PaddyTheDev@Hotmail.com">Contact</a>
-    </div>
+  <header class="topbar container reveal delay-1">
+    <a class="brand" href="#top">PA//DEV</a>
+    <nav aria-label="Primary">
+      <a href="#featured-work">Projects</a>
+      <a href="#approach">Approach</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
-  <section>
-    <h2>Projects</h2>
-    <p>
-      Playable prototypes are available on itch.io.
-    </p>
-    <div class="links">
-      <a href="https://zpaddyz.itch.io/" target="_blank" rel="noopener noreferrer">Visit my itch.io profile</a>
-    </div>
+  <main id="top">
+    <section class="hero container reveal delay-2">
+      <div class="hero-copy">
+        <p class="eyebrow">Patrick Andersen - Game Developer and Software Developer</p>
+        <h1>Building gameplay systems that hold up after iteration ten.</h1>
+        <p class="lead">
+          I design and implement maintainable game and software architecture with a strong focus on
+          ownership boundaries, runtime reliability, and shipping real products.
+        </p>
 
-    <div class="card">
-      <h3>GenoCube (Upcoming Steam Project)</h3>
-      <p class="tag">Primary Project · In Development</p>
-      <p>
-        Larger-scale game project in active development with a long-term Steam release target.
-        Main focus areas are core gameplay loops, scalable architecture, and production workflow.
-      </p>
-      <ul>
-        <li>Gameplay system design and balancing</li>
-        <li>Feature planning and iterative prototyping</li>
-        <li>Long-term production and release preparation</li>
-      </ul>
-      <div class="links">
-        <a href="https://zpaddyz.itch.io/" target="_blank" rel="noopener noreferrer">Other games on itch.io</a>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#featured-work">Explore Projects</a>
+          <a class="btn btn-secondary" href="mailto:PaddyTheDev@Hotmail.com">Email Me</a>
+        </div>
+
+        <ul class="stat-strip" aria-label="Quick highlights">
+          <li>
+            <strong>3+</strong>
+            <span>Playable prototypes</span>
+          </li>
+          <li>
+            <strong>1</strong>
+            <span>Steam-focused title in development</span>
+          </li>
+          <li>
+            <strong>1</strong>
+            <span>Industry role in business-critical systems</span>
+          </li>
+        </ul>
       </div>
-    </div>
 
-    <div class="card">
-      <h3>Spider The Game (2023 Prototype)</h3>
-      <p>
-        Physics-based prototype focused on climbing, combat, and progression systems.
-      </p>
-      <ul>
-        <li>Traversal with climbing-focused movement</li>
-        <li>Combat and interaction prototypes</li>
-        <li>Early progression and moment-to-moment gameplay</li>
-      </ul>
-      <div class="links">
-        <a href="https://zpaddyz.itch.io/spider-the-game" target="_blank" rel="noopener noreferrer">Play on itch.io</a>
-        <a href="https://github.com/zPaddyz" target="_blank" rel="noopener noreferrer">More on GitHub</a>
+      <aside class="hero-panel">
+        <p class="panel-label">Current Direction</p>
+        <h2>Prototype speed with production discipline.</h2>
+        <p>
+          My current Unity systems work is centered around pressure-based scanning, mutation drafting,
+          and extraction risk loops. The goal is always the same: keep gameplay expressive while keeping
+          architecture clean.
+        </p>
+
+        <ul class="checklist">
+          <li>Component-driven gameplay architecture</li>
+          <li>Clear data flow between stats, abilities, and combat</li>
+          <li>Run-based loops with high iteration velocity</li>
+        </ul>
+
+        <ul class="stack-pills" aria-label="Tech stack">
+          <li>Unity 6</li>
+          <li>C#</li>
+          <li>URP</li>
+          <li>Input System</li>
+          <li>.NET</li>
+          <li>Git</li>
+        </ul>
+      </aside>
+    </section>
+
+    <section id="featured-work" class="container section reveal delay-3">
+      <div class="section-head">
+        <p class="eyebrow">Selected Work</p>
+        <h2>Projects with playable outcomes</h2>
+        <p>
+          You can test my prototypes directly on itch.io and follow ongoing development on GitHub.
+        </p>
       </div>
-    </div>
 
-    <div class="card">
-      <h3>Face Mask Game (2020 Prototype)</h3>
-      <p>
-        Fast-paced reaction prototype focused on timing, scoring, and difficulty ramp-up.
-      </p>
-      <ul>
-        <li>Precision click targeting loop</li>
-        <li>Score system with fail conditions</li>
-        <li>Difficulty scaling over session runtime</li>
-      </ul>
-      <div class="links">
-        <a href="https://zpaddyz.itch.io/face-mask-game" target="_blank" rel="noopener noreferrer">Play on itch.io</a>
-        <a href="https://github.com/zPaddyz" target="_blank" rel="noopener noreferrer">More on GitHub</a>
+      <div class="project-grid">
+        <article class="project-card featured">
+          <p class="project-meta">Primary Project</p>
+          <h3>GenoCube (Upcoming Steam Project)</h3>
+          <p>
+            A larger-scale game project in active development, aimed at a long-term Steam release.
+            The focus is durable gameplay loops, scalable feature architecture, and production rhythm.
+          </p>
+          <ul>
+            <li>Gameplay systems design, balancing, and playtest iteration</li>
+            <li>Modular feature implementation for long-term maintainability</li>
+            <li>Release-oriented planning from prototype to production pipeline</li>
+          </ul>
+          <div class="inline-links">
+            <a href="https://zpaddyz.itch.io/" target="_blank" rel="noopener noreferrer">Itch.io Profile</a>
+            <a href="https://github.com/zPaddyz" target="_blank" rel="noopener noreferrer">GitHub Profile</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <p class="project-meta">2023 Prototype</p>
+          <h3>Spider The Game</h3>
+          <p>
+            Physics-focused prototype centered on climbing traversal, close-range combat, and progression ideas.
+          </p>
+          <ul>
+            <li>Climbing-first movement feel and traversal control</li>
+            <li>Combat interaction experiments and enemy pressure moments</li>
+            <li>Early progression hooks for sustained player sessions</li>
+          </ul>
+          <div class="inline-links">
+            <a href="https://zpaddyz.itch.io/spider-the-game" target="_blank" rel="noopener noreferrer">Play on Itch.io</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <p class="project-meta">2020 Prototype</p>
+          <h3>Face Mask Game</h3>
+          <p>
+            Fast reaction loop where timing, score pressure, and escalating pace drive moment-to-moment intensity.
+          </p>
+          <ul>
+            <li>Precision click targeting with immediate feedback</li>
+            <li>Score and fail-state loop tuned for short replay sessions</li>
+            <li>Progressive difficulty scaling across runtime</li>
+          </ul>
+          <div class="inline-links">
+            <a href="https://zpaddyz.itch.io/face-mask-game" target="_blank" rel="noopener noreferrer">Play on Itch.io</a>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <p class="project-meta">Systems Inspiration</p>
+          <h3>CUBE KILLER BOY (Unity Systems Sandbox)</h3>
+          <p>
+            Ongoing architecture playground for combat attacks, scanning loops, mutation effects,
+            and stat-driven run progression patterns.
+          </p>
+          <ul>
+            <li>Decoupled stat and mutation pipelines</li>
+            <li>Centralized scanning and telegraphed attack structures</li>
+            <li>Run lifecycle flow with extraction and recovery logic</li>
+          </ul>
+          <div class="inline-links">
+            <a href="https://github.com/zPaddyz" target="_blank" rel="noopener noreferrer">Follow Development</a>
+          </div>
+        </article>
       </div>
-    </div>
+    </section>
 
-  </section>
+    <section id="approach" class="container section reveal delay-4">
+      <div class="section-head">
+        <p class="eyebrow">Engineering Approach</p>
+        <h2>How I build</h2>
+      </div>
 
-  <section>
-    <h2>Technical Skills</h2>
-    <ul class="skills">
-      <li>C# / .NET</li>
-      <li>Java</li>
-      <li>JavaScript / TypeScript</li>
-      <li>SQL</li>
-      <li>REST APIs</li>
-      <li>Unity</li>
-      <li>Git</li>
-    </ul>
-  </section>
+      <div class="principle-grid">
+        <article class="principle-card">
+          <h3>Design for iteration</h3>
+          <p>
+            I optimize for frequent gameplay changes without destabilizing the codebase.
+            Data-driven tuning and clear ownership boundaries are key.
+          </p>
+        </article>
 
-  <section>
-    <h2>Experience</h2>
-    <div class="card">
-      <h3>Netcompany</h3>
-      <p>
-        Worked with business-critical systems, incident handling, and internal tooling.
-        Built automation tools that improved operational efficiency and reduced repetitive work.
-      </p>
-    </div>
-  </section>
+        <article class="principle-card">
+          <h3>Ship-focused architecture</h3>
+          <p>
+            Good structure only matters if features ship. I keep systems observable,
+            testable, and simple enough for fast debugging under pressure.
+          </p>
+        </article>
 
-  <section>
-    <h2>Let’s Build Something</h2>
-    <p>
-      Open to collaborations in gameplay programming, backend services, and tool development.
-      Reach out on LinkedIn or by email.
-    </p>
-    <div class="links">
-      <a href="mailto:PaddyTheDev@Hotmail.com">Email Me</a>
-      <a href="https://www.linkedin.com/in/paddyz/" target="_blank" rel="noopener noreferrer">Message on LinkedIn</a>
-    </div>
-  </section>
+        <article class="principle-card">
+          <h3>Cross-domain mindset</h3>
+          <p>
+            I combine gameplay engineering with software fundamentals from enterprise systems,
+            including reliability, incident awareness, and operational discipline.
+          </p>
+        </article>
+      </div>
+    </section>
 
-</div>
+    <section id="skills" class="container section reveal delay-5">
+      <div class="section-head">
+        <p class="eyebrow">Toolkit</p>
+        <h2>Technical skills</h2>
+      </div>
 
+      <div class="skill-columns">
+        <article class="skill-card">
+          <h3>Game Development</h3>
+          <ul>
+            <li>Unity gameplay programming</li>
+            <li>C# and .NET runtime architecture</li>
+            <li>Combat, movement, and progression systems</li>
+            <li>Balancing and iterative prototype workflows</li>
+          </ul>
+        </article>
+
+        <article class="skill-card">
+          <h3>Software Engineering</h3>
+          <ul>
+            <li>Java and JavaScript / TypeScript</li>
+            <li>REST APIs and backend integration</li>
+            <li>SQL data handling and query design</li>
+            <li>System maintainability and code quality practices</li>
+          </ul>
+        </article>
+
+        <article class="skill-card">
+          <h3>Delivery and Collaboration</h3>
+          <ul>
+            <li>Git workflows and structured releases</li>
+            <li>Issue handling and troubleshooting in production contexts</li>
+            <li>Clear communication across technical and non-technical stakeholders</li>
+            <li>Continuous improvement through feedback loops</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section id="experience" class="container section reveal delay-6">
+      <div class="section-head">
+        <p class="eyebrow">Experience</p>
+        <h2>Professional background</h2>
+      </div>
+
+      <div class="timeline">
+        <article class="timeline-entry">
+          <h3>Netcompany</h3>
+          <p>
+            Worked with business-critical systems, incident handling, and internal tooling.
+            Built automation that reduced repetitive tasks and improved operational speed.
+          </p>
+        </article>
+
+        <article class="timeline-entry">
+          <h3>Independent Game Development</h3>
+          <p>
+            Designed and shipped multiple playable prototypes while refining architecture,
+            gameplay feel, and production workflows for larger future releases.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="contact" class="container section reveal delay-7">
+      <div class="cta-block">
+        <p class="eyebrow">Collaboration</p>
+        <h2>Let us build the next playable thing.</h2>
+        <p>
+          I am open to opportunities in gameplay programming, game systems engineering,
+          and backend-supported game features.
+        </p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="mailto:PaddyTheDev@Hotmail.com">PaddyTheDev@Hotmail.com</a>
+          <a class="btn btn-secondary" href="https://www.linkedin.com/in/paddyz/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a class="btn btn-secondary" href="https://github.com/zPaddyz" target="_blank" rel="noopener noreferrer">GitHub</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="container footer reveal delay-7">
+    <p>Patrick Andersen - Built for GitHub Pages</p>
+  </footer>
 </body>
 </html>
