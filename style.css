@@ -350,6 +350,16 @@ h3 {
     transition: transform 0.24s ease, border-color 0.24s ease;
 }
 
+/* Make cards use column layout so links can sit at the bottom */
+.project-card {
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card > .inline-links {
+    margin-top: auto;
+}
+
 .project-card:hover,
 .project-card:focus-within {
     transform: translateY(-3px);
